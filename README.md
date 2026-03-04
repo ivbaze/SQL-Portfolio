@@ -31,4 +31,4 @@ I engineered a SQL pipeline using a Common Table Expression (CTE) to create a cl
 4. **Aggregated Valuation:** Multiplied the clean price by the clean stock count, grouping by category to find the total dollar value of the inventory.
 
 ## 💻 The Code
-You can view the full SQL script used to build the schema, insert the messy data, and execute the cleaning/aggregation pipeline here: [https://github.com/ivbaze/ivbaze/blob/main/inventory_cleaning.sql]
+You can view the full SQL script used to build the schema, insert the messy data, and execute the cleaning/aggregation pipeline here: [(https://github.com/ivbaze/ivbaze/blob/main/inventory_cleaning.sql)]
