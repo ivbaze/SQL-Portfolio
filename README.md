@@ -1,4 +1,4 @@
-[Inventory1 - Inventory.csv](https://github.com/user-attachments/files/29215798/Inventory1.-.Inventory.csv)# SQL-Portfolio
+# SQL-Portfolio
 
 # 📦 SQL Data Cleaning & Inventory Valuation
 
@@ -35,4 +35,4 @@ You can view the full SQL script used to build the schema, insert the messy data
 
 ## 📂 The Dataset
 The raw, unstructured data used for this project is available here: 
-[View the raw inventory dataset (CSV)](Inventory1 - Inventory.csv)
+[View the raw inventory dataset (CSV)][Inventory1 - Inventory.csv](https://github.com/user-attachments/files/29215798/Inventory1.-.Inventory.csv)
