@@ -35,4 +35,4 @@ You can view the full SQL script used to build the schema, insert the messy data
 
 ## 📂 The Dataset
 The raw, unstructured data used for this project is available here: 
-[View the raw inventory dataset (CSV)]
+[View the raw inventory dataset (CSV)](Inventory1 - Inventory.csv)
