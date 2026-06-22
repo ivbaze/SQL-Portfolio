@@ -1,0 +1,47 @@
+select
+  arrival_airport AS destination,
+  count(date) AS total_flights,
+  round(avg(arrival_delay), 2) AS avg_arrival_delay_minutes,
+  max(arrival_delay) AS worst_arrival_delay
+from `bigquery-samples.airline_ontime_data.flights`
+where departure_airport = 'ORD'
+  and date >= '2008-01-01' 
+  and arrival_delay IS NOT NULL
+group by arrival_airport
+having total_flights > 100
+order by avg_arrival_delay_minutes desc
+limit 15;
+
+
+select
+  airline,
+  count(date) AS total_flights,
+  sum(case when departure_delay > 15 then 1 else 0 end) as late_flights,
+  round(
+    (sum(case when departure_delay > 15 then 1 else 0 end) / count(date)) * 100, 2
+  ) AS percent_late
+from `bigquery-samples.airline_ontime_data.flights`
+where departure_airport = 'ORD'
+  and date >= '2008-01-01'
+group by airline
+having total_flights > 100
+order by percent_late DESC;
+
+WITH Chicago_Delays AS (
+  select
+    airline,
+    departure_airport,
+    departure_delay,
+  from `bigquery-samples.airline_ontime_data.flights`
+  where departure_airport = 'ORD' 
+    and departure_delay > 0
+    and date >= '2008-01-01'
+)
+
+select
+  airline, 
+  count(departure_delay) as total_delayed_flights,
+  round(avg(departure_delay), 2) AS avg_delay_mintues
+from Chicago_Delays
+group by airline
+order by total_delayed_flights desc;
