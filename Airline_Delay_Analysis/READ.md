@@ -17,7 +17,7 @@ Operational efficiency is the lifeblood of the aviation industry. Every minute a
 ## 💡 Business Questions Answered
 1. **Carrier Performance:** Which airlines have the highest departure delay rates (>15 minutes) leaving Chicago, indicating potential ground crew or turnaround inefficiencies?
 2. **Geographic Bottlenecks:** Which of the top 15 destinations are causing the most severe arrival delays, highlighting broader airspace or routing bottlenecks?
-3. **Volume vs. Reliability:** How do the delay rates of high-frequency carriers compare to smaller regional airlines?
+3. **Geographic Bottlenecks & Route Efficiency:** Which flight routes are experiencing the worst arrival bottlenecks?
 
 ## 💻 The SQL Code
 The queries used to extract and aggregate the BigQuery dataset can be found below:
