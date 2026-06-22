@@ -11,7 +11,8 @@ Operational efficiency is the lifeblood of the aviation industry. Every minute a
 
 ## 📊 Executive Dashboard
 
-![Executive Dashboard](Screenshot%202026-03-20%2012.53.20%20PM.png)
+![Executive Dashboard]
+<img width="1687" height="1257" alt="Screenshot 2026-06-22 11 31 27 AM" src="https://github.com/user-attachments/assets/41cc0aa3-4383-4828-bbf4-308177a169a5" />
 
 ## 💡 Business Questions Answered
 1. **Carrier Performance:** Which airlines have the highest departure delay rates (>15 minutes) leaving Chicago, indicating potential ground crew or turnaround inefficiencies?
